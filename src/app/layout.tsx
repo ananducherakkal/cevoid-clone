@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import TopNavbar from "@/components/navbar/topNavbar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -14,7 +15,10 @@ type Props = Readonly<{
 export default async function RootLayout({ children }: Props) {
   return (
     <html lang="en" className="text-gray-90">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <TopNavbar />
+        {children}
+      </body>
     </html>
   );
 }

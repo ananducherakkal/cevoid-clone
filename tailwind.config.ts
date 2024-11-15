@@ -73,6 +73,7 @@ const config = {
         content: "1400px",
       },
       fontSize: {
+        xxs: ["9px", "11px"],
         base: ["16px", "20px"],
         md: ["18px", "22px"],
         lg: ["20px", "24px"],
