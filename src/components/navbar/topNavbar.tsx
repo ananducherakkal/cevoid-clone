@@ -2,6 +2,7 @@ import React from "react";
 import HeaderLogo from "./topNavbarLogo";
 import TopNavbarMenu from "./topNavbarMenu";
 import TopNavbarAuthSection from "./topNavbarAuthSection";
+import TopNavbarMobileMenu from "./topNavbarMobileMenu";
 
 const TopNavbar = () => {
   return (
@@ -10,6 +11,7 @@ const TopNavbar = () => {
         <HeaderLogo />
         <TopNavbarMenu />
         <TopNavbarAuthSection />
+        <TopNavbarMobileMenu />
       </div>
     </nav>
   );
