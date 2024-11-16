@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import TopNavbar from "@/components/navbar/topNavbar";
+import "react-slideshow-image/dist/styles.css";
 
 const inter = Inter({
   subsets: ["latin"],
