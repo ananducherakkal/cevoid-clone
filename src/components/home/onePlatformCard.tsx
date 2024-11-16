@@ -17,8 +17,8 @@ const OnePlatformCard = (props: Props) => {
     <div className={cn("flex flex-col w-full", className)}>
       <div className="w-full pt-[70%] rounded-xl relative overflow-hidden border border-border">
         <Image
-          width={400}
-          height={280}
+          width={700}
+          height={400}
           src={data.image}
           alt={data.title}
           className="w-full h-full absolute -top-1 -left-1 object-cover scale-105"

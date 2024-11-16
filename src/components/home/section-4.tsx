@@ -1,5 +1,6 @@
 import React from "react";
 import OnePlatformCard from "./onePlatformCard";
+import OnePlatformConnetion from "./onePlatformConnetion";
 
 const cardData = [
   {
@@ -46,6 +47,7 @@ const SectionFour = () => {
           />
         ))}
       </div>
+      <OnePlatformConnetion />
     </section>
   );
 };
