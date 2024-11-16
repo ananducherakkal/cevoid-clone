@@ -7,7 +7,7 @@ const SectionOne = () => {
     <section className="w-full lg:min-h-screen relative overflow-hidden pt-36">
       <div className="container-max-w">
         <div className="flex flex-col pt-10 pb-[28vw]">
-          <h1 className="text-[7vw] leading-[7.2vw] sm:text-3xl lg:text-6xl text-gray-80 font-semibold">
+          <h1 className="text-[7vw] leading-[7.2vw] sm:text-2xl lg:text-5xl text-gray-80 font-semibold">
             All-in one UGC platform
             <br /> for e-commerce brands
           </h1>
