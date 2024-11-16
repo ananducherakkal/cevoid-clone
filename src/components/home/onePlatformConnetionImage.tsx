@@ -4,9 +4,9 @@ import { cn } from "@/utils/shadcn";
 const OnePlatfromConnectionImage = ({ className, ...props }: IconProps) => {
   return (
     <svg
-      width="820"
-      height="344"
-      viewBox="0 0 820 344"
+      width="833"
+      height="352"
+      viewBox="0 0 833 352"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -14,14 +14,56 @@ const OnePlatfromConnectionImage = ({ className, ...props }: IconProps) => {
       {...props}
     >
       <path
-        d="M409.5 0V214.5C409.5 224.993 418.007 233.5 428.5 233.5H703C713.493 233.5 722 242.007 722 252.5V343.5M1 0V105.5C1 115.993 9.50659 124.5 20 124.5H799.5C809.993 124.5 818.5 115.993 818.5 105.5V0"
+        d="M416.5 8V221.5C416.5 232.546 425.454 241.5 436.5 241.5H709C720.046 241.5 729 250.454 729 261.5V351.5M8 8V112.5C8 123.546 16.9543 132.5 28 132.5H805.5C816.546 132.5 825.5 123.546 825.5 112.5V8"
         stroke="#DDDDDD"
         strokeWidth="2"
       />
+      <circle r="8">
+        <animateMotion
+          dur="7s"
+          repeatCount="indefinite"
+          path="M8 8V112.5C8 123.546 16.9543 132.5 28 132.5H396.5C407.546 132.5 416.5 141.454 416.5 152.5V221.5C416.5 232.546 425.454 241.5 436.5 241.5H709C720.046 241.5 729 250.454 729 261.5V351.5"
+        />
+        <animate
+          attributeName="fill"
+          values="black;black;#8349FF;#8349FF"
+          dur="7s"
+          repeatCount="indefinite"
+          keyTimes="0;0.45;0.55;1"
+        />
+      </circle>
+      <circle r="8">
+        <animateMotion
+          dur="7s"
+          repeatCount="indefinite"
+          path="M825.5 8V112.5C825.5 123.546 816.546 132.5 805.5 132.5H436.5C425.454 132.5 416.5 141.454 416.5 152.5V221.5C416.5 232.546 425.454 241.5 436.5 241.5H709C720.046 241.5 729 250.454 729 261.5V351.5"
+        />
+        <animate
+          attributeName="fill"
+          values="black;black;#8349FF;#8349FF"
+          dur="7s"
+          repeatCount="indefinite"
+          keyTimes="0;0.45;0.55;1"
+        />
+      </circle>
+      <circle r="8">
+        <animateMotion
+          dur="7s"
+          repeatCount="indefinite"
+          path="M416.5 8V221.5C416.5 232.546 425.454 241.5 436.5 241.5H709C720.046 241.5 729 250.454 729 261.5V351.5"
+        />
+        <animate
+          attributeName="fill"
+          values="black;black;#8349FF;#8349FF"
+          dur="7s"
+          repeatCount="indefinite"
+          keyTimes="0;0.45;0.55;1"
+        />
+      </circle>
       <rect
         width="80"
         height="80"
-        transform="translate(370.35 85)"
+        transform="translate(377.35 93)"
         fill="url(#pattern0_26_46)"
       />
       <defs>
