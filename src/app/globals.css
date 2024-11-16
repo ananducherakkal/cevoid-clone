@@ -41,6 +41,12 @@
   }
 }
 
+@layer utilities {
+  .container-max-w {
+    @apply w-full max-w-7xl px-10 mx-auto;
+  }
+}
+
 .truncate-lines-4 {
   display: -webkit-box;
   -webkit-box-orient: vertical;

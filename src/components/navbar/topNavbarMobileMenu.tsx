@@ -14,14 +14,14 @@ const TopNavbarMobileMenu = () => {
   };
 
   return (
-    <div className="flex ml-auto">
+    <div className="flex lg:hidden ml-auto">
       <button className="" onClick={toggleMenu}>
         <HamburgerIcon className="w-6 h-6" />
       </button>
       <div
         className={cn(
           "bg-primary z-40 h-screen w-screen fixed top-0 -right-full transition-transform",
-          active ? "-translate-x-full" : ""
+          active ? "-translate-x-full" : "translate-x-10"
         )}
       >
         <div className="w-full h-full p-6 flex flex-col">

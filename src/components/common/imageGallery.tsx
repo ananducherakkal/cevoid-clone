@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ImageGalleryCard from "./imageGalleryCard";
+import { cn } from "@/utils/shadcn";
 
 const cardConfig = [
   [
@@ -105,28 +106,39 @@ const cardConfig = [
   ],
 ];
 
-const ImageGallery = () => {
+type Props = {
+  className?: string;
+};
+const ImageGallery = (props: Props) => {
+  const { className } = props;
+
   return (
-    <div className="w-screen flex justify-center items-end overflow-x-hidden">
-      <div className="min-w-[105%] flex items-end space-x-7">
-        {cardConfig.map((section, index) => (
-          <div key={index} className="flex-1 relative green space-y-7">
-            {section.map((card) => (
-              <div
-                key={card.id}
-                className="w-full relative rounded-xl overflow-hidden"
-                style={{ paddingTop: `${card.ratio}%` }}
-              >
-                <ImageGalleryCard
-                  name={card.name}
-                  profession={card.profession}
-                  images={card.images}
-                />
-              </div>
-            ))}
-          </div>
-        ))}
-      </div>
+    <div
+      className={cn(
+        "w-full flex items-end space-x-3 lg:space-x-5 xl:space-x-7",
+        className
+      )}
+    >
+      {cardConfig.map((section, index) => (
+        <div
+          key={index}
+          className="flex-1 relative green space-y-3 md:space-y-5 lg:space-y-7"
+        >
+          {section.map((card) => (
+            <div
+              key={card.id}
+              className="w-full relative rounded-xl overflow-hidden"
+              style={{ paddingTop: `${card.ratio}%` }}
+            >
+              <ImageGalleryCard
+                name={card.name}
+                profession={card.profession}
+                images={card.images}
+              />
+            </div>
+          ))}
+        </div>
+      ))}
     </div>
   );
 };

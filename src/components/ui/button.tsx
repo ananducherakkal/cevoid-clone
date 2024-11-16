@@ -5,13 +5,13 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/utils/shadcn";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center space-x-2 text-base font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 flex",
+  "inline-flex items-center justify-center space-x-2 text-base font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 flex transition-opacity",
   {
     variants: {
       variant: {
-        default: "bg-gray-90 text-gray-10 hover-bg-gray-90/90",
+        default: "bg-gray-90 text-gray-10 opacity-100 hover:opacity-80",
         secondary:
-          "bg-gray-10 text-gray-90 border border-border hover:bg-gray-20 active:bg-gray-30",
+          "bg-gray-10 text-gray-90 border border-gray-90 opacity-100 hover:opacity-60",
         distructive:
           "bg-red-500/40 text-gray-90 border border-red-500/70 hover:bg-red-500/20 active:bg-red-500/60",
         defined:
@@ -19,7 +19,7 @@ const buttonVariants = cva(
       },
       size: {
         default: "h-8 rounded-full font-normal px-4 py-1",
-        md: "h-8 rounded-md px-4 text-sm",
+        md: "h-10 rounded-full px-6 py-2",
         icon: "h-10 w-10",
       },
     },
