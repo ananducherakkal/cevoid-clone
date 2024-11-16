@@ -43,7 +43,7 @@
 
 @layer utilities {
   .container-max-w {
-    @apply w-full max-w-7xl px-10 mx-auto;
+    @apply w-full max-w-7xl px-6 sm:px-10 mx-auto;
   }
 }
 
