@@ -30,7 +30,7 @@ const OnePlatformChannels = () => {
   const [selectedItem, setSelectedItem] = useState(channelList[0]);
 
   return (
-    <div className="container-max-w flex flex-col md:flex-row justify-center">
+    <div className="w-full flex flex-col md:flex-row justify-center mb-24">
       <div className="flex flex-col flex-1 md:mr-5 my-10">
         <h2 className="text-gray-90 text-2xl md:text-5xl font-semibold">
           Showcase UGC in your marketing channels
