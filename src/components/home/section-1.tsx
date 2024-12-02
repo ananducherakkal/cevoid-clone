@@ -1,13 +1,20 @@
+"use client";
 import React from "react";
 import ImageGallery from "../common/imageGallery";
 import { Button } from "../ui/button";
+import { motion } from "framer-motion";
 
 const SectionOne = () => {
   return (
     <section className="w-full lg:min-h-screen relative overflow-hidden pt-36">
       <div className="container-max-w">
-        <div className="flex flex-col pt-10 pb-[28vw]">
-          <h1 className="text-[7vw] leading-[7.2vw] sm:text-3xl lg:text-6xl text-gray-80 font-semibold">
+        <motion.div
+          className="flex flex-col pt-10 pb-[28vw]"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <h1 className="text-[7vw] leading-[7.2vw] sm:text-2xl lg:text-5xl text-gray-80 font-semibold">
             All-in one UGC platform
             <br /> for e-commerce brands
           </h1>
@@ -24,7 +31,7 @@ const SectionOne = () => {
               Contact sales
             </Button>
           </div>
-        </div>
+        </motion.div>
       </div>
       <ImageGallery className="absolute w-[105%] -bottom-2 left-1/2 -translate-x-1/2 -z-10 hidden md:flex" />
     </section>

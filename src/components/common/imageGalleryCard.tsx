@@ -35,7 +35,7 @@ const ImageGalleryCard = (props: Props) => {
         width={300}
         height={450}
         className={cn(
-          "absolute top-0 left-0 min-w-full min-h-full max-w-full -z-10 object-cover transition-opacity duration-1000",
+          "absolute top-0 left-0 min-w-full min-h-full max-w-full -z-10 object-cover transition-opacity duration-700",
           isLoaded ? "opacity-100" : "opacity-0"
         )}
         alt={name}

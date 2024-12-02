@@ -79,10 +79,6 @@ const config = {
         md: ["18px", "22px"],
         lg: ["20px", "24px"],
         xl: ["24px", "30px"],
-        "2xl": ["30px", "36px"],
-        "3xl": ["40px", "44px"],
-        "4xl": ["48px", "53px"],
-        "8xl": ["96px", "106px"],
       },
       borderRadius: {
         lg: "var(--radius)",
