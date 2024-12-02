@@ -47,18 +47,13 @@ const OnePlatformConnetion = ({ className, ...props }: IconProps) => {
             keyTimes="0;0.45;0.55;1"
           />
         </circle>
-        <circle r="8">
+        <circle r="8" fill="black">
           <animateMotion
             dur="7s"
             repeatCount="indefinite"
-            path="M416.5 8V221.5C416.5 232.546 425.454 241.5 436.5 241.5H709C720.046 241.5 729 250.454 729 261.5V351.5"
-          />
-          <animate
-            attributeName="fill"
-            values="black;black;#8349FF;#8349FF"
-            dur="7s"
-            repeatCount="indefinite"
-            keyTimes="0;0.45;0.55;1"
+            path="M416.5 8L416.023 133"
+            keyTimes="0;0.4286;1"
+            keyPoints="0;1;1"
           />
         </circle>
         <rect

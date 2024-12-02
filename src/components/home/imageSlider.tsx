@@ -16,7 +16,6 @@ type Props = {
 
 const ImageSlider = (props: Props) => {
   const { imageList, className } = props;
-  console.log("yyyyyyyyyy", props);
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
