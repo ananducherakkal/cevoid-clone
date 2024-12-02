@@ -30,7 +30,7 @@ const ImageSlider = (props: Props) => {
         className
       )}
     >
-      <div className="w-[900] max-w-[200vw]">
+      <div className="w-[900px] max-w-[200vw]">
         <Slide
           duration={2000}
           arrows
